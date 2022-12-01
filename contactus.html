@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Niconne&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="icon" type="image/png" href="images/logo.png">
+    <title> Contact Us | Crownz </title>
+  
+</head>
+<body>
+<header class="contact">
+ <div class="navbar-fixed">  
+  <nav class="pink">
+   <div class="container"> 
+    <div class="nav-wrapper">
+     <a href="index.html" class="brand-logo">Crownz</a> 
+     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>  
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li class="active"><a href="contactus.html">Contact Us</a></li>
+      </ul>    
+     </div>
+    </div> 
+   </nav>
+</div>
+<!--sidenav--> 
+  <ul id="slide-out" class="sidenav" style="font-family: 'Cinzel',serif;">
+      <li><a href="index.html" class="red-text">Home</a></li>
+      <div class="divider red"></div>
+      <li><a href="gallery.html" class="red-text">Gallery</a></li>
+      <div class="divider red"></div>
+      <li><a href="contactus.html" class="red-text">Contact Us</a></li>
+    </ul>
+ </header>   
+<!--fixed action button-->
+<section>
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large pulse pink darken-1"><i class="large material-icons white-text" title="menu" alt="menu">menu</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating pink accent-3" href="index.html"><i class="material-icons" title="home" alt="home">home</i></a></li>
+        <li><a class="btn-floating amber" href="gallery.html"><i class="material-icons" title="gallery" alt="gallery">grade</i></a></li>
+        <li><a class="btn-floating orange" href="contactus.html"><i class="material-icons" title="contact us" alt="contact us">phone</i></a></li>
+      </ul>
+    </div>
+</section>  
+<!--Contact--> 
+<div class="container contact" style="width: 955%;">
+
+<div class="row">
+  <h5 class="red-text">Find us</h5>
+    <div class="col s12 m6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.2761303359052!2d121.30702391427555!3d14.178598491081134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5f59818ea5c3%3A0xd5e3830a22f5a826!2sTESDA%20Laguna!5e0!3m2!1sen!2sph!4v1669910447863!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+     <h5 class="red-text">Address</h5>   
+    <p class="black-text">KM 70, Brgy, Calauan, Laguna</p>
+</div>
+  <div class="col s12 m6">
+ <p class="black-text" style="font-size: 16px;">Send us your comments, thoughts, feedback and inquiries and we will quickly get back to you.</p>   
+    <fieldset style="font-size: 20px;">
+      <legend class="black-text"> Contact Form </legend>
+      <label for=“fn” class="black-text" style="font-size: 17px;"> Full Name: </label> <br>
+      <input type="text" id=“fn” name="fname" placeholder="Insert your full name" size="50px" required><br>
+      <label for="no" class="black-text" style="font-size: 17px;"> Contact No.: </label> <br>
+      <input type="tel" id="no" name="usrtel" placeholder="Insert your contact number" size="50px"> <br>
+      <label for="em" class="black-text" style="font-size: 17px;"> E-mail: </label> <br>
+      <input type="email" id="em" name="email" placeholder="Insert your email address" size="50px"> <br>
+      <label for="ts" class="black-text" style="font-size: 17px;"> Message </label><br>
+      <textarea id="ts" placeholder="Write here..." name="message" rows="500" cols="100"> </textarea>
+</fieldset><br>
+<button class="btn waves-effect waves-light pink darken-1" type="submit" name="action">Submit
+  <i class="material-icons right">send</i>
+</button>
+  </div>
+  </div>
+</div>
+
+<!-- Footer  -->
+<footer class="center" style="background-color: rgb(204, 45, 72);">
+<p>2022 - TeleCall - Primero - For Educational Purposes Only <br> All rights reserved</p>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+</script>
+<script>
+$(document).ready(function(){
+//sidenav init
+$('.sidenav').sidenav({
+    edge: 'right'
+})
+$('.fixed-action-btn').floatingActionButton({
+      direction: 'left'
+});
+}); 
+</script>
+</body>
+</html>
